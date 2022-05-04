@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #98D1F5;
+    --cor1: #5AAADB;
+    --cor2: #4582A8;
+    --cor3: #26475C;
+    --cor4: #184561;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        background-image: url('fundo.jpg');
+        background-position: center;
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    header{
+        padding: 15px 15px;
+        width: auto;
+        height: auto;
+        margin: 10px 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    header div {
+     background-color: aliceblue;
+     width: 330px;
+     height: 100%;
+     padding: 15px 15px;
+
+    }
+
+    header div img{
+    width: 100%;
+    height: 100%;
+
+    }
+
+    header nav{
+        display: inline-block;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px 15px;
+        }
+
+    header nav > a {
+    color: aliceblue;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-decoration: none;
+    }
+
+    header nav  a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    }
+
+
+
+    main{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    }
+    
+    main div.texto{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
+    height: 30%;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    bottom: 300px;
+    }
+
+
+    main  div.texto  h2 {
+        font-size: 2.0em;
+        line-height: 1.5em;
+      text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    main  div.texto  h3 {
+        font-size: 1.7em;
+        line-height: 1.5em;
+      text-align: center;
+        color: aliceblue;
+    }
+
+    main div.for{
+        width: auto;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 15px 15px 15px 15px;
+        display: inline-block;
+        margin: 15px 15px;
+       
+       
+     
+    }
+
+
+    main  div.for > input {
+    background-color: aliceblue;
+    width: 300px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    }
+
+    main  div.for > input.botao {
+        background-color: aliceblue;
+        width: 300px;
+        height: 70px;
+        border: 2px solid black;
+        border-radius: 30px;
+        font-size: 2em;
+        font-weight: bold;
+        }
+
+        main  div.for > input.botao:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        }
+
+    main div.for p{
+    color: aliceblue;
+    font-size: 1.3em;
+    line-height: 1.0em;
+    font-weight: bold;
+
+    }
+
+    @media screen and (max-width:700px) {
+    div.texto{
+        padding: 40px 0;
+        text-align: center;
+        position: relative;
+        top: 5px;
+
+    }
+   div.for{
+   height: auto;
+   width: 96%;
+   max-width: 400px;
+   position: static;
+   display: inline-block;
+
+   }
+
+}
+
+
+article{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+article div.celula img{
+width: 320px;
+height: 500px;
+border: 2px solid black;
+border-radius: 10px;
+display: inline-block;
+margin: 10px 10px;
+}
+
+article div.lista{
+border: 2px solid black;
+border-radius: 10px;
+width: auto;
+height: 350px;
+display: inline-block;
+position: absolute;
+top: 1000px;
+left: 400px;
+}
+
+article div.lista h2  {
+text-align: center;
+font-size: 1.1em;
+line-height: 1.8em;
+color: aliceblue;
+
+}
+
+article div.lista ul  {
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.0em;
+    color: aliceblue;
+    margin: 20px 20px;
+    padding: 15px 15px;
+    }
+
+    @media screen and (max-width:700px) {
+       article div.celula{
+            padding: 25px 40px;
+           margin:10px 10px ;
+        
+        }
+      article div.lista{
+       max-width: 500px;
+       position: static;
+       margin: 10px 10px;
+       padding: 10px 10px;
+       }
+    
+    }
